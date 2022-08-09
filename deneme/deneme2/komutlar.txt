@@ -1,0 +1,107 @@
+Busuu 23
+
+
+nautilus /usr/share = Klasor acmayi saglar. 
+
+ubuntu sürüm öğrenme Komutu =
+cat /etc/issue
+veya
+cat /etc/issue.net
+
+nmcli device wifi show-password = wifi sifresini gosterir
+
+ubuntu donanım bilgileri öğrenme =
+uname -a
+Yada
+uname -m
+
+openvpn calistirma komutu = sudo openvpn --config sego.ovpn
+
+history = komut gecmisini listeler 
+history - c = komut gecmisini siler 
+
+touch = herhagi bir belge, pdf vb seyleri olusturur
+
+rm = dosya ve belgeleri siler
+rm -r = klasorleri siler
+
+cp  = dosya ve belgeleri kopyalar
+cp -r = klasorleri kopyalar
+
+mv = dosya ve belgeleri tasir 
+mv  = klasorleri tasir  mv matematik/ dersler/
+mv = dosya, belge ve klasorlerin isimlerini degistirir
+
+arsiv olusturma = tar -zcvf arsiv1.tar -arsive alinan dosyanin ismi yazilir-
+arsiv acma = tar -zxvf arsivli dosyanin ismi
+
+nano = nano komutu dosyalari terminalden acar 
+nano crlt+w = dosyalarin icersindeki kelimeleri arar
+
+ vi = text editoru 
+ :qa vinden cikar 
+ gedit = ikinci bir text editoru
+ 
+ cat = dosyalari okur
+ cat -n = her satirin numarasini gosterir
+ cat -E = satir sonlarini gosterir
+ more = terminal penceresine sigmayan metinleri okumamiza izin verir q tusu islemi sonlandirir
+ nl = bos satirlar haric diger satirlara satir numarasi ekler 
+ 
+ 
+ file = dosyanin turunu ogrenmemizi saglar
+ 
+ sort = dosyanin icindeki sutunlari ilk sutuna gore sirarlar
+ 
+ sort -k 2 = ikinci sutuna gore sirarlar
+ 
+ grep 'aranacak kelime' liste.txt = dosyalarda arama yapar
+ 
+ grep -i ' ' tumListeler = tum listelerde arama yapar 
+ 
+ > operatoru = buyuk isareti iki farkli dosyanin ciktisini yeni bir dosya olarak acar 
+ >> operatoru = cıktıları dosyaların sonuna yazdırmak için kullanılan yonlendirme operatoru
+ | operatoru = terminal ciktilarini farkli bir programa girdi olarak vermek icin kullanilir
+ 
+ sudo usermod -a -G eklenilecekgrubun ismi eklenen kullanicinin ismi
+ sudo chown -yeni sahip- degistirilecek dizin veya dosya ismi
+ sudo chgrp = grubun sahibini degistirir
+ sudo chown -R = Birden fazla dosya ve dizinin sahipliğinin degistirir
+ sudo chgrp -R = Birden fazla dosya ve dizinin grubun sahibini degistirir
+ 
+ chmod +w,r,x = dosya yazma, okuma ve calistirma izinlerini acar
+ 
+ ps -ef = gorev yoneticisinin terminaldeki karsiligidir
+ 
+ ps -auroot = secilen kullanicin actigi islemlerdir
+ 
+ htop = calisan programlari gosterir
+ 
+ kill PID = calisan programlari sonlandirir
+ 
+ chmod -w,r,x = dosya yazma, okuma ve calistirma izinlerini kapatir 
+ r=4 w=2 x=1 okuma, yazma ve calistirma izinlerinin sayisal degerleri
+ 
+nohup firefox & = terminalde acilan bir uygulmanin terminal kapatildiktan sonra calistirilmasini saglar.
+ 
+systemctl list-units --type service = sistemdeki servisleri goruntuler
+systemctl list-units --type service --state running = sistem uzerindeki calissan servisleri goruntuler
+systemctl status servisIsmi = servis hakkinda bilgi verir
+sudo systemctl stop servisIsmi = servisi durdurur
+sudo systemctl start servisIsmi = servisi baslatir
+sudo systemctl restart servisIsmi = servisi yeniden baslatir
+
+ip addr show, ip a = ip ile ilgili bilgiler verir
+
+apt list --upgradable = bilgisayarımızda kurulu olup güncellenebilir uygulamaları listeler
+
+curl rate.sx/eth@4h
+
+curl wttr.in/?n5
+
+
+
+
+  
+  
+ 
