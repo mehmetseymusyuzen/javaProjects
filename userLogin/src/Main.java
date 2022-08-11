@@ -21,7 +21,7 @@ public class Main {
             System.out.print("Your select : ");
             select = input.nextLine();
             if (select.equals("1")) {
-                System.out.println("Your new password must be different " + "from your old password and the wrong password !!!");
+                System.out.println("Your new password must be different from your old password and the wrong password !!!");
                 System.out.print("Entry your new password : ");
                 newPassword = input.nextLine();
 
