@@ -43,7 +43,7 @@ public class Main {
                 System.out.println("Your Ticket Price : " + normalPrice * thirdTypeDiscount);
             }
         } else {
-            System.out.println("Girdiler yanlis");
+            System.out.println("You entered incomplete or incorrect information, please try again !");
         }
     }
 }
