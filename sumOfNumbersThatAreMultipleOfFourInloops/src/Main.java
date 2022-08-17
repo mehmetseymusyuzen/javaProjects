@@ -7,7 +7,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         do {
-            System.out.print("Bir sayi giriniz : ");
+            System.out.print("Enter a number : ");
             number = input.nextInt();
 
             if (number % 4 == 0) {
