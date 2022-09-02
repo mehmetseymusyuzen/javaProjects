@@ -6,7 +6,7 @@ public class Course {
     int midTermExam;
     int finalExam;
 
-    public Course(String name, String code, String prefix) {
+    Course(String name, String code, String prefix) {
         this.name = name;
         this.code = code;
         this.prefix = prefix;

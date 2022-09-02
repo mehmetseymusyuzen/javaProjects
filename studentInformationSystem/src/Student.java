@@ -8,7 +8,7 @@ public class Student {
     double avarage;
     boolean isPass;
 
-    public Student(String name, String studentNumber, int classes, Course mathematics, Course physics, Course english) {
+    Student(String name, String studentNumber, int classes, Course mathematics, Course physics, Course english) {
         this.name = name;
         this.studentNumber = studentNumber;
         this.classes = classes;
