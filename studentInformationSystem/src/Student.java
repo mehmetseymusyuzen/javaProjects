@@ -8,7 +8,7 @@ public class Student {
     double avarage;
     boolean isPass;
 
-    Student(String name, String studentNumber, int classes, Course mathematics, Course physics, Course english) {
+    public Student(String name, String studentNumber, int classes, Course mathematics, Course physics, Course english) {
         this.name = name;
         this.studentNumber = studentNumber;
         this.classes = classes;
@@ -55,15 +55,15 @@ public class Student {
     }
 
     public void isPass() {
-            this.isPass = isCheckPass();
-            printNote();
-            System.out.println("Your avarage : " + this.avarage);
-            if (this.isPass) {
-                System.out.println(this.name + " passed the class");
-            } else {
-                System.out.println(this.name + " did not pass the class");
-            }
+        this.isPass = isCheckPass();
+        printNote();
+        System.out.println("Your avarage : " + this.avarage);
+        if (this.isPass) {
+            System.out.println(this.name + " passed the class");
+        } else {
+            System.out.println(this.name + " did not pass the class");
         }
+    }
 
     public void printNote() {
         System.out.println("==============================================");

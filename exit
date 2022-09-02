@@ -1,0 +1,91 @@
+[1mdiff --git a/studentInformationSystem/out/production/studentInformationSystem/Course.class b/studentInformationSystem/out/production/studentInformationSystem/Course.class[m
+[1mindex ea70738..c66539d 100644[m
+Binary files a/studentInformationSystem/out/production/studentInformationSystem/Course.class and b/studentInformationSystem/out/production/studentInformationSystem/Course.class differ
+[1mdiff --git a/studentInformationSystem/out/production/studentInformationSystem/Main.class b/studentInformationSystem/out/production/studentInformationSystem/Main.class[m
+[1mindex 699f9b0..508efb5 100644[m
+Binary files a/studentInformationSystem/out/production/studentInformationSystem/Main.class and b/studentInformationSystem/out/production/studentInformationSystem/Main.class differ
+[1mdiff --git a/studentInformationSystem/out/production/studentInformationSystem/Student.class b/studentInformationSystem/out/production/studentInformationSystem/Student.class[m
+[1mindex 545fe21..b53fc98 100644[m
+Binary files a/studentInformationSystem/out/production/studentInformationSystem/Student.class and b/studentInformationSystem/out/production/studentInformationSystem/Student.class differ
+[1mdiff --git a/studentInformationSystem/out/production/studentInformationSystem/Teacher.class b/studentInformationSystem/out/production/studentInformationSystem/Teacher.class[m
+[1mindex 2bb9e1e..8ab6b04 100644[m
+Binary files a/studentInformationSystem/out/production/studentInformationSystem/Teacher.class and b/studentInformationSystem/out/production/studentInformationSystem/Teacher.class differ
+[1mdiff --git a/studentInformationSystem/src/Course.java b/studentInformationSystem/src/Course.java[m
+[1mindex 8233a60..fd2efd3 100644[m
+[1m--- a/studentInformationSystem/src/Course.java[m
+[1m+++ b/studentInformationSystem/src/Course.java[m
+[36m@@ -6,7 +6,7 @@[m [mpublic class Course {[m
+     int midTermExam;[m
+     int finalExam;[m
+ [m
+[31m-    Course(String name, String code, String prefix) {[m
+[32m+[m[32m    public Course(String name, String code, String prefix) {[m
+         this.name = name;[m
+         this.code = code;[m
+         this.prefix = prefix;[m
+[36m@@ -14,7 +14,7 @@[m [mpublic class Course {[m
+         this.finalExam = 0;[m
+     }[m
+ [m
+[31m-    void addTeacher(Teacher teacher) {[m
+[32m+[m[32m    public void addTeacher(Teacher teacher) {[m
+         if (teacher.branch.equals(this.prefix)) {[m
+             this.teacher = teacher;[m
+             printTeacher();[m
+[1mdiff --git a/studentInformationSystem/src/Student.java b/studentInformationSystem/src/Student.java[m
+[1mindex 48c10cf..33da4ef 100644[m
+[1m--- a/studentInformationSystem/src/Student.java[m
+[1m+++ b/studentInformationSystem/src/Student.java[m
+[36m@@ -8,7 +8,7 @@[m [mpublic class Student {[m
+     double avarage;[m
+     boolean isPass;[m
+ [m
+[31m-    Student(String name, String studentNumber, int classes, Course mathematics, Course physics, Course english) {[m
+[32m+[m[32m    public Student(String name, String studentNumber, int classes, Course mathematics, Course physics, Course english) {[m
+         this.name = name;[m
+         this.studentNumber = studentNumber;[m
+         this.classes = classes;[m
+[36m@@ -55,15 +55,15 @@[m [mpublic class Student {[m
+     }[m
+ [m
+     public void isPass() {[m
+[31m-            this.isPass = isCheckPass();[m
+[31m-            printNote();[m
+[31m-            System.out.println("Your avarage : " + this.avarage);[m
+[31m-            if (this.isPass) {[m
+[31m-                System.out.println(this.name + " passed the class");[m
+[31m-            } else {[m
+[31m-                System.out.println(this.name + " did not pass the class");[m
+[31m-            }[m
+[32m+[m[32m        this.isPass = isCheckPass();[m
+[32m+[m[32m        printNote();[m
+[32m+[m[32m        System.out.println("Your avarage : " + this.avarage);[m
+[32m+[m[32m        if (this.isPass) {[m
+[32m+[m[32m            System.out.println(this.name + " passed the class");[m
+[32m+[m[32m        } else {[m
+[32m+[m[32m            System.out.println(this.name + " did not pass the class");[m
+         }[m
+[32m+[m[32m    }[m
+ [m
+     public void printNote() {[m
+         System.out.println("==============================================");[m
+[1mdiff --git a/studentInformationSystem/src/Teacher.java b/studentInformationSystem/src/Teacher.java[m
+[1mindex fd86d07..b4ae058 100644[m
+[1m--- a/studentInformationSystem/src/Teacher.java[m
+[1m+++ b/studentInformationSystem/src/Teacher.java[m
+[36m@@ -3,13 +3,13 @@[m [mpublic class Teacher {[m
+     String phoneNumber;[m
+     String branch;[m
+ [m
+[31m-    Teacher(String name, String phoneNumber, String branch) {[m
+[32m+[m[32m    public Teacher(String name, String phoneNumber, String branch) {[m
+         this.name = name;[m
+         this.phoneNumber = phoneNumber;[m
+         this.branch = branch;[m
+     }[m
+ [m
+[31m-    void print() {[m
+[32m+[m[32m    public void print() {[m
+         System.out.println("========================================");[m
+         System.out.println("Teacher added to the system");[m
+         System.out.println("Teacher's name : " + this.name);[m

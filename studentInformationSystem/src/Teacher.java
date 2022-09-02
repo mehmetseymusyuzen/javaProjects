@@ -3,13 +3,13 @@ public class Teacher {
     String phoneNumber;
     String branch;
 
-    Teacher(String name, String phoneNumber, String branch) {
+    public Teacher(String name, String phoneNumber, String branch) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.branch = branch;
     }
 
-    void print() {
+    public void print() {
         System.out.println("========================================");
         System.out.println("Teacher added to the system");
         System.out.println("Teacher's name : " + this.name);
